@@ -2,7 +2,7 @@
 (that are expected to get created in corbaJavaGenerated.CounterCORBA)
 
 To generate *.java files from IDL file CounterInterface.idl 
-either assuming that you are in directory /corba when you call idlj:
+either assuming that you are in directory src/corba when you call idlj:
 
 idlj -td ../ -pkgPrefix CounterCORBA corbaJavaGenerated -fall CounterInterface.idl
 

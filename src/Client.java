@@ -25,7 +25,16 @@ public class Client {
 			CounterInterface CounterImpl = CounterInterfaceHelper.narrow(ncRef.resolve(path));
 
 			System.out.println("Obtained a handle on server object: "+ CounterImpl);
-			System.out.println(CounterImpl.getCount());
+			
+			CounterImpl.printCounter();
+			System.out.println("Value seen from the client : " + CounterImpl.getCount());
+			
+			CounterImpl.incrementCounter();
+			
+			System.out.println("Call to increment done.");
+			System.out.println("Value seen from the client : " + CounterImpl.getCount());
+			CounterImpl.printCounter();
+			
 		} catch (Exception e) {
 			System.out.println("ERROR : " + e);
 			e.printStackTrace();
