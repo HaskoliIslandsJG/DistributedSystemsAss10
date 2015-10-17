@@ -1,0 +1,16 @@
+// compile with
+// (assuming that your are in directory ds_07/corba when you call idlj):
+// idlj -td ../ -pkgPrefix CounterCORBA corbaJavaGenerated -fall CounterInterface.idl
+// (assuming that your are in the parent directory of ds_07/corba when you call idlj):
+// idlj -pkgPrefix CounterCORBA ds_07.corba -fall ds_07/corba/CounterInterface.idl
+
+
+module CounterCORBA
+{
+	interface CounterInterface
+	{
+		void incrementCounter();
+		long getCount();
+		void printCounter();
+	};
+};
