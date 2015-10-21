@@ -1,3 +1,5 @@
+Github project : https://github.com/HaskoliIslandsJG/DistributedSystemsAss10.git
+
 0. You need to run idlj to create the missing *.java files from CounterInterface.idl 
 (that are expected to get created in corbaJavaGenerated.CounterCORBA)
 
@@ -13,6 +15,8 @@ and you need to press F5 after each idlj run to reread the file system.)
 After that the *.java files should compile without problems.
 
 To run:
+
+cd in the same directory as this readme
 
 1. Start CORBA middleware (the ORB) on all hosts:
 orbd -ORBInitialPort 1050
